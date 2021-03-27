@@ -10,7 +10,7 @@ from bokeh.plotting import figure, output_file, show
 import datetime
 from bokeh.models import Label, Title, NumeralTickFormatter
 from dotenv import load_dotenv
-
+from boto.s3.connection import S3Connection
 
 
 st.title('Month long Stock time slice')
@@ -35,6 +35,8 @@ if 1:
     if 0:
         load_dotenv('.env')
         APIkey=os.getenv('api_token')
+    if 1:
+        APIkey = S3Connection(os.environ['APIkey'])
     print(APIkey)
     #APIkey="GJKSUSWKNT7GMC1N"
 
