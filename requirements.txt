@@ -1,10 +1,7 @@
 pandas
 streamlit
-plotly
 python-dotenv
 altair
-bokeh
 requests
 numpy
 datetime
-boto
